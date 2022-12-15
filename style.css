@@ -1,0 +1,72 @@
+.popup, .sim-popup ,.mean-popup{
+display:none;
+background-color: white;
+}
+
+.sim-header {
+padding:2px 2px 1px;
+
+}
+.sim-header, .sim-content, .sim-next{
+justify-content: center;
+display:flex;
+}
+
+.sim-next{
+padding:10px;
+}
+
+.arrow, .done{
+cursor: pointer;
+border: none;
+outline: none;
+background: none;
+font-size: 1.05rem;	
+color: grey;
+}
+
+.arrow:hover{
+color: black;
+}
+
+.popup-body{
+display:flex;
+padding: 5px 60px 10px;
+align-items: center;
+justify-content:space-between;
+}
+
+.popup-body .word{
+font-size: 2.5rem;
+}
+
+.popup-replace{
+display:flex;
+justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

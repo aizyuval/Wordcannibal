@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+
+<head>
+
+<style> .popup, .sim-popup ,.mean-popup{
+	display:none;
+	background-color: white;
+	}
+	
+	.sim-header {
+	padding:2px 2px 1px;
+	
+	}
+	.sim-header, .sim-content, .sim-next{
+	justify-content: center;
+	display:flex;
+	}
+	
+	.sim-next{
+	padding:10px;
+	}
+	
+	.arrow, .done{
+	cursor: pointer;
+	border: none;
+	outline: none;
+	background: none;
+	font-size: 1.05rem;	
+	color: grey;
+	}
+	
+	.arrow:hover{
+	color: black;
+	}
+	
+	.popup-body{
+	display:flex;
+	padding: 5px 60px 10px;
+	align-items: center;
+	justify-content:space-between;
+	}
+	
+	.popup-body .word{
+	font-size: 2.5rem;
+	}
+	
+	.popup-replace{
+	display:flex;
+	justify-content: center;
+	}
+
+	</style>
+<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+<script>
+	$(document).ready(function(){
+	
+	$(".sim-popup").show();
+	
+	var wordlist = [];
+	var newwordlist = [];
+	var newarraylist = [];
+	var meaning = "";
+	brandarraylist = [];
+	var i = 0;
+	
+	$(".add").on("click", function(){
+	
+	wordlist.push($(".wordinput").val());
+	console.log(wordlist);
+	
+	$(".wordinput").val("");
+	
+	});
+	
+	
+	//check below no next
+	$(".next").on("click", async position => {
+		
+		$(".sim-popup").hide();
+		const data = {wordlist};
+		const options =  {
+			method: 'POST',
+			headers:{
+				'Content-Type':'application/json'
+			},
+			body: JSON.stringify(data)
+
+		};
+		const response = await fetch('/api', options)
+		const json = await response.json();
+		console.log(json);
+
+		
+		var arrays = json.thedata;
+		console.log(arrays);
+		for (x in arrays){
+			if (x!=0){
+				newarraylist.push(arrays[x]);
+			};
+		};
+		
+
+		for (o in newarraylist){
+			var text = newarraylist[o].replace(/ /g ,"");
+			text = text.replace(/'/g ,"");
+			text = text.replace("]" ,"");
+			text = text.replace("[" ,"");
+			brandarraylist.push(text.split(","));
+		};
+
+	for (i in brandarraylist){
+		for (var z=0; z< brandarraylist[i].length; z++)
+				{
+					newwordlist.push(brandarraylist[i][z]);
+
+				}
+	}
+	// here the python code needs to work
+
+
+	$(".mean-popup").show();
+	});
+	
+	
+	$(".done").on("click", function(){
+	
+	meaning = $(".meaning").val();
+	console.log(meaning);
+	
+	$(".mean-popup").hide();
+	$(".popup").show();
+	$(".word").text(newwordlist[0]);
+	
+	});
+	
+	
+	$("#rightarr").on("click", function(){
+	var t = newwordlist.length - 1;
+	if(i!=t){
+	i++;
+	$(".word").text(newwordlist[i]);
+	}
+	
+	});
+	
+	$("#leftarr").on("click", function(){
+	var t = newwordlist.length - 1;
+	if(i!=0){
+	i--;
+	$(".word").text(newwordlist[i]);
+	}
+	
+	});
+	
+	});
+	</script>
+
+
+
+
+
+</head>
+
+
+<html>
+<body>
+
+
+<div class="popup"> 
+
+
+	<div class="popup-body">
+
+		<div>
+			<button class="arrow" id="leftarr"><</button>
+		</div>
+
+		<div>
+			<span class="word">Complicated<span>
+		</div>
+
+		<div>
+			<button class="arrow" id="rightarr">></button>
+		</div>
+
+	</div>
+
+
+	<div class="popup-replace">
+
+		<button id="replace">Replace</button>
+
+	</div>
+
+
+</div>
+
+
+<div class="sim-popup">
+
+	<div class="sim-header">
+		<h1> Insert similar words </h1>
+	</div>
+
+
+	<div class="sim-content">
+		<input type="text" class="wordinput" placeholder="Word">
+		<button class="add">Add</button>
+	</div>
+	<div class="sim-next">
+		<button class="next">next</button>
+	</div>
+
+</div>
+
+<div class="mean-popup">
+
+	<div class="sim-header">
+		<h1> Insert meaning</h1>
+	</div>
+
+
+	<div class="sim-content">
+		<textarea class="meaning" placeholder="Its meaning is..."></textarea>
+	</div>
+	<div class="sim-next">
+		<button class="done">Done</button>
+	</div>
+
+</div>
+
+
+
+
+
+</body>
+</html>

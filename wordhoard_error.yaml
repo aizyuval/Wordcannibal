@@ -1,0 +1,65 @@
+2022-12-07 14:46:13:wordhoard.synonyms:INFO: Wordnet had no synonym reference for the word illogical
+2022-12-07 16:07:09:wordhoard.synonyms:INFO: Wordnet had no synonym reference for the word illogical
+2022-12-08 16:06:02:wordhoard.utilities.basic_soup:ERROR: A ConnectionError has occurred when requesting https://www.merriam-webster.com/thesaurus/example
+2022-12-08 16:06:02:wordhoard.utilities.basic_soup:ERROR:   File "C:\Users\yuval\AppData\Local\Programs\Python\Python38\lib\site-packages\wordhoard\utilities\basic_soup.py", line 98, in get_single_page_html
+    response = self._requests_retry_session().get(self._url_to_scrape,
+  File "C:\Users\yuval\AppData\Local\Programs\Python\Python38\lib\site-packages\requests\sessions.py", line 600, in get
+    return self.request("GET", url, **kwargs)
+  File "C:\Users\yuval\AppData\Local\Programs\Python\Python38\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\yuval\AppData\Local\Programs\Python\Python38\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\yuval\AppData\Local\Programs\Python\Python38\lib\site-packages\requests\adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+
+2022-12-08 16:06:02:wordhoard.synonyms:ERROR: An AttributeError occurred in the following code segment:
+2022-12-08 16:06:02:wordhoard.synonyms:ERROR:   File "C:\Users\yuval\AppData\Local\Programs\Python\Python38\lib\site-packages\wordhoard\synonyms.py", line 322, in _query_merriam_webster
+    if response.status_code == 404:
+
+2022-12-08 16:43:25:wordhoard.synonyms:INFO: Wordnet had no synonym reference for the word trying
+2022-12-08 16:46:42:wordhoard.synonyms:INFO: Wordnet had no synonym reference for the word trying
+2022-12-08 16:48:03:wordhoard.synonyms:INFO: Wordnet had no synonym reference for the word trying
+2022-12-08 16:48:18:wordhoard.synonyms:INFO: Wordnet had no synonym reference for the word trying
+2022-12-08 16:51:37:wordhoard.synonyms:ERROR: The word D:\prog\html\extvone\hoardy.py was not in a valid format.
+2022-12-08 16:51:37:wordhoard.synonyms:ERROR: Please verify that the word D:\prog\html\extvone\hoardy.py is spelled correctly.
+2022-12-08 16:58:57:wordhoard.synonyms:ERROR: The word D:\prog\html\extvone\hoardy.py was not in a valid format.
+2022-12-08 16:58:57:wordhoard.synonyms:ERROR: The word D:\prog\html\extvone\hoardy.py was not in a valid format.
+2022-12-08 16:58:57:wordhoard.synonyms:ERROR: Please verify that the word D:\prog\html\extvone\hoardy.py is spelled correctly.
+2022-12-08 16:58:57:wordhoard.synonyms:ERROR: Please verify that the word D:\prog\html\extvone\hoardy.py is spelled correctly.
+2022-12-08 16:59:24:wordhoard.synonyms:ERROR: The word D:\prog\html\extvone\hoardy.py was not in a valid format.
+2022-12-08 16:59:24:wordhoard.synonyms:ERROR: Please verify that the word D:\prog\html\extvone\hoardy.py is spelled correctly.
+2022-12-08 17:03:07:wordhoard.synonyms:ERROR: The word D:\prog\html\extvone\hoardy.py was not in a valid format.
+2022-12-08 17:03:07:wordhoard.synonyms:ERROR: Please verify that the word D:\prog\html\extvone\hoardy.py is spelled correctly.
+2022-12-08 17:06:14:wordhoard.synonyms:ERROR: The word D:\prog\html\extvone\hoardy.py was not in a valid format.
+2022-12-08 17:06:14:wordhoard.synonyms:ERROR: Please verify that the word D:\prog\html\extvone\hoardy.py is spelled correctly.
+2022-12-08 17:22:30:wordhoard.synonyms:ERROR: The word D:\prog\html\extvone\hoardy.py was not in a valid format.
+2022-12-08 17:22:30:wordhoard.synonyms:ERROR: Please verify that the word D:\prog\html\extvone\hoardy.py is spelled correctly.
+2022-12-08 17:23:02:wordhoard.synonyms:ERROR: The word d:\prog\html\extvone\tempCodeRunnerFile.py was not in a valid format.
+2022-12-08 17:23:02:wordhoard.synonyms:ERROR: Please verify that the word d:\prog\html\extvone\tempCodeRunnerFile.py is spelled correctly.
+2022-12-08 17:23:07:wordhoard.synonyms:ERROR: The word d:\prog\html\extvone\tempCodeRunnerFile.py was not in a valid format.
+2022-12-08 17:23:07:wordhoard.synonyms:ERROR: Please verify that the word d:\prog\html\extvone\tempCodeRunnerFile.py is spelled correctly.
+2022-12-08 17:28:43:wordhoard.synonyms:ERROR: The word d:\prog\html\extvone\tempCodeRunnerFile.py was not in a valid format.
+2022-12-08 17:28:43:wordhoard.synonyms:ERROR: Please verify that the word d:\prog\html\extvone\tempCodeRunnerFile.py is spelled correctly.
+2022-12-08 17:31:25:wordhoard.synonyms:ERROR: The word d:\prog\html\extvone\tempCodeRunnerFile.py was not in a valid format.
+2022-12-08 17:31:25:wordhoard.synonyms:ERROR: Please verify that the word d:\prog\html\extvone\tempCodeRunnerFile.py is spelled correctly.
+2022-12-08 17:32:10:wordhoard.synonyms:ERROR: The word D:\prog\html\extvone\hoardy.py was not in a valid format.
+2022-12-08 17:32:10:wordhoard.synonyms:ERROR: Please verify that the word D:\prog\html\extvone\hoardy.py is spelled correctly.
+2022-12-08 18:35:11:wordhoard.synonyms:ERROR: The word D:\prog\html\extvone\hoardy.py was not in a valid format.
+2022-12-08 18:35:11:wordhoard.synonyms:ERROR: Please verify that the word D:\prog\html\extvone\hoardy.py is spelled correctly.
+2022-12-08 19:27:18:wordhoard.synonyms:ERROR: The word D:\prog\html\extvone\hoardy.py was not in a valid format.
+2022-12-08 19:27:18:wordhoard.synonyms:ERROR: Please verify that the word D:\prog\html\extvone\hoardy.py is spelled correctly.
+2022-12-08 19:34:59:wordhoard.synonyms:ERROR: The word D:\prog\html\extvone\hoardy.py was not in a valid format.
+2022-12-08 19:34:59:wordhoard.synonyms:ERROR: Please verify that the word D:\prog\html\extvone\hoardy.py is spelled correctly.
+2022-12-08 19:37:44:wordhoard.synonyms:ERROR: The word D:\prog\html\extvone\hoardy.py was not in a valid format.
+2022-12-08 19:37:44:wordhoard.synonyms:ERROR: Please verify that the word D:\prog\html\extvone\hoardy.py is spelled correctly.
+2022-12-08 19:45:26:wordhoard.synonyms:ERROR: The word D:\prog\html\extvone\hoardy.py was not in a valid format.
+2022-12-08 19:45:26:wordhoard.synonyms:ERROR: Please verify that the word D:\prog\html\extvone\hoardy.py is spelled correctly.
+2022-12-08 20:01:10:wordhoard.synonyms:ERROR: The word D:\prog\html\extvone\hoardy.py was not in a valid format.
+2022-12-08 20:01:10:wordhoard.synonyms:ERROR: Please verify that the word D:\prog\html\extvone\hoardy.py is spelled correctly.
+2022-12-08 20:01:13:wordhoard.synonyms:INFO: Wordnet had no synonym reference for the word translate
+2022-12-08 20:04:40:wordhoard.synonyms:ERROR: The word D:\prog\html\extvone\hoardy.py was not in a valid format.
+2022-12-08 20:04:40:wordhoard.synonyms:ERROR: Please verify that the word D:\prog\html\extvone\hoardy.py is spelled correctly.
+2022-12-08 20:47:30:wordhoard.synonyms:ERROR: The word D:\prog\html\extvone\hoardy.py was not in a valid format.
+2022-12-08 20:47:30:wordhoard.synonyms:ERROR: Please verify that the word D:\prog\html\extvone\hoardy.py is spelled correctly.
+2022-12-15 17:16:46:wordhoard.synonyms:ERROR: The word D:\prog\html\extvone\hoardy.py was not in a valid format.
+2022-12-15 17:16:46:wordhoard.synonyms:ERROR: Please verify that the word D:\prog\html\extvone\hoardy.py is spelled correctly.
