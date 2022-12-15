@@ -1,15 +1,12 @@
 
 
-import {PythonShell} from 'python-shell';  //lets see if this bring errors!!!
+import {PythonShell} from 'python-shell';  
 import express from 'express';
 
-//const express = require('express');
-//const PythonShell = require('python-shell');
 
 const app = express();
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`listening in ${port}`));
-
 
 
 
@@ -40,43 +37,5 @@ response.json({
   });
 });
 
-
-// end of pyshell section
-
-
-
 });
 
-
-
-
-
-/*
-for (x in data.wordl){
-data.wordl[x] = `its ${data.wordl[x]}`;
-}
-
-
-import {PythonShell} from 'python-shell';
-chrome.action.onClicked.addListener(buttonClicked);
-
-function buttonClicked(tab){
-
-var msg = { 
-      txt: "hellfuckthisworks"
-    };
-
-    chrome.tabs.sendMessage(tab.id,msg);
-
-
-  }
-*/
-
-
-
-/*
-,
-    "browser_action":{
-        "default_icon": "ext.png"
-    }
-*/
