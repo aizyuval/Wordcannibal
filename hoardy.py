@@ -6,9 +6,6 @@ from wordhoard import Hyponyms
 import sys
 
 
-
-#arg1 = sys.argv[1]
-
 arguments = sys.argv
 
 
@@ -20,40 +17,3 @@ for word in arguments:
         synonym_results = synonym_results[:7]
     print(synonym_results)
 
- 
- 
- ## none
-	##arguments[word] = synonym_results
- 
-## send arguments to server
-
-
-
-
-#
-
-
-##opposite -> search for defenition, get words
-#definition = Definitions(search_string='angry')
-#definition_results = definition.find_definitions()
-#print("this is the defenitions",definition_results)
-##compare defenitions..
-
-
-
-
-##Its a type of ##adj?
-###hyponym = Hyponyms(search_string='')
-###hyponym_results = hyponym.find_hyponyms()
-##print("this is the specifiers",hyponym_results)
-
-
-##hyponym = Hyponyms(search_string='event')
-##hyponym_results = hyponym.find_hyponyms()
-##print("this is the specifiers",hyponym_results)
-
-
-##its less specific than...
-##hyponym = Hyponyms(search_string='angry')
-##hyponym_results = hyponym.find_hyponyms()
-##print("this is the defenitions",hyponym_results)
